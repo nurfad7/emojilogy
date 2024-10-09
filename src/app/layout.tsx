@@ -28,7 +28,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+      <div className="w-full h-full flex flex-col bg-cream-main">
+        <header className="w-full h-12 py-2 px-5">
+          <span className="text-yellow-300 text-outline text-lg">emojilogy</span>
+        </header>
+          {children}
+        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        </footer>
+      </div>
       </body>
     </html>
   );
